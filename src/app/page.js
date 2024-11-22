@@ -11,8 +11,8 @@ export default function Home() {
       <h1>
         Página Principal
       </h1>
-      <p>Paragráfo da página principal</p>
-      <p>Autor {nome}</p>
+      <p id={styles.p}>Paragráfo da página principal</p>
+      <p id={styles.autor}>Autor {nome}</p>
       <Image 
       className={styles.imagem}
       src={"/imagens/OIP.jpg"} 
