@@ -22,7 +22,7 @@ export default function Header() {
                             <Link href="/state" className={style.link}>Bom dia</Link>
                         </li>
                         <li>
-                            <Link href="/page" className={style.link}>Inicial</Link>
+                            <Link href="/" className={style.link}>Inicial</Link>
                         </li>
                     </ul>
                 </nav>

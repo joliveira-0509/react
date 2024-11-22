@@ -31,3 +31,27 @@
     padding: 5px;
     margin-top: 1vh;
 }
+
+@media (max-width:600px) {
+
+    .link{
+        font-size: 12px;
+    }
+
+    .botao{
+        margin-left: -55vw;
+    }
+    
+}
+
+@media (max-width:900px) {
+
+    .link{
+        font-size: 12px;
+    }
+
+    .botao{
+        margin-left: -55vw;
+    }
+    
+}
