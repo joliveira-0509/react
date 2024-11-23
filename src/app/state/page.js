@@ -1,35 +1,44 @@
-'use client'
-import { useState } from "react"
+'use client';
+
+import { useState } from 'react';
+import style from './state.module.css';
 
 export default function State() {
-    const [conteudo, setConteudo] = useState('Bom dia');
+    const [conteudo, setConteudo] = useState('Bom dia!');
     const [name, setName] = useState('');
-    const [showdiv, setShowdiv] = useState(true)
-    const contpara = () => {
-        setConteudo('Boa Tarde!');
-        console.log('conteudo: ' + conteudo);
+    const [showdiv, setShowdiv] = useState(true);
+
+    const toggleConteudo = () => {
+        setConteudo((prevConteudo) => (prevConteudo === 'Bom dia!' ? 'Boa tarde!' : 'Bom dia!'));
     };
 
-    function continput(evento) {
-        console.log(evento.target.value)
-        setName(evento.target.value)
+    const continput = (evento) => {
+        setName(evento.target.value);
     };
 
     return (
         <div>
-            <p>
-                {conteudo}
-            </p>
-            <button onClick={contpara}>Mudar</button>
-            <button onClick={() => { setShowdiv(!showdiv) }}>{showdiv ? "Esconder" : "Mostrar"}</button>
-            {showdiv && (
-                <div>
-                    <p>Nome:{name}</p>
-                    <input type="text" onChange={continput} />
-                </div>
-            )
-            }
+
+            <div className={style.divAcolhida}>
+
+                <p className={style.conteudo}>
+                    {conteudo}
+                </p>
+                <p>{name}</p>
+                <button className={style.botao} onClick={toggleConteudo}>Mudar</button>
+
+            </div>
+            <div className={style.divName}>
+                <button className={style.botao} onClick={() => setShowdiv(!showdiv)}>
+                    {showdiv ? 'Esconder' : 'Mostrar'}
+                </button>
+                {showdiv && (
+                    <div className={style.input}>
+                        <input id={style.input} type="text" onChange={continput} />
+                    </div>
+                )}
+            </div>
 
         </div>
-    )
-};
+    );
+}

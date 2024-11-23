@@ -1,5 +1,21 @@
 .imagem{
+    width: 500px;
+    height: auto;
     border-radius: 20px;
     display: block;
     margin: auto;
+}
+
+.title{
+     margin-bottom:3vh;
+
+}
+
+.info{
+    margin-top: 20vh;
+}
+
+.name{
+    font-weight: bold;
+    color:blue
 }
