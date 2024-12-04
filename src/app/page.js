@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <header />
-      <h1>
+      <h1 className={styles.title}>
         Página Principal
       </h1>
       <p id={styles.p}>Paragráfo da página principal</p>
@@ -20,6 +20,10 @@ export default function Home() {
       width={850} 
       height={500} 
       />
+      <div className={styles.info}>
+      <p className={styles.p}>Paragráfo da página principal</p>
+      <p className={styles.autor}>Autor: <span className={styles.name}>{nome}</span> </p>
+      </div>
     </div>
   );
 }

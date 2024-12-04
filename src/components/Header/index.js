@@ -16,9 +16,6 @@ export default function Header() {
                             <Link href="/sobre" className={style.link}>Sobre</Link>
                         </li>
                         <li>
-                            <Link href="/contato" className={style.link}>Contato</Link>
-                        </li>
-                        <li>
                             <Link href="/state" className={style.link}>Bom dia</Link>
                         </li>
                         <li>
