@@ -1,4 +1,4 @@
-/* "use client"
+"use client"
 import Link from "next/link"
 import style from "./header.module.css"
 import { useState } from "react";
@@ -22,6 +22,12 @@ export default function Header() {
                             <Link href="/state" className={style.link}>Bom dia</Link>
                         </li>
                         <li>
+                            <Link href="/listas" className={style.link}>Listas</Link>
+                        </li>
+                        <li>
+                            <Link href="/props" className={style.link}>Props</Link>
+                        </li>
+                        <li>
                             <Link href="/" className={style.link}>Inicial</Link>
                         </li>
                     </ul>
@@ -30,9 +36,9 @@ export default function Header() {
         </header>
     )
 }
- */
 
-"use client"
+
+/* "use client"
 import Link from "next/link"
 import style from "./header.module.css"
 import {FaBars, FaTimes} from "react-icons/fa"
@@ -53,6 +59,9 @@ function NavBar() {
                     <li>
                         <Link href="/" className={style.link}>Inicial</Link>
                     </li>
+                    <li>
+                        <Link href="/lista" className={style.link}>listas</Link>
+                    </li>
                 </ul>
                 <button>
                     <FaTimes />
@@ -65,4 +74,4 @@ function NavBar() {
 
         </header>
     )
-}
+} */
