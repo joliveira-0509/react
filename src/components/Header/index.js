@@ -1,4 +1,4 @@
-/* "use client"
+"use client"
 import Link from "next/link"
 import style from "./header.module.css"
 import { useState } from "react";
@@ -30,9 +30,8 @@ export default function Header() {
         </header>
     )
 }
- */
 
-"use client"
+/* "use client"
 import Link from "next/link"
 import style from "./header.module.css"
 import {FaBars, FaTimes} from "react-icons/fa"
@@ -65,4 +64,4 @@ function NavBar() {
 
         </header>
     )
-}
+} */
