@@ -22,6 +22,12 @@ export default function Header() {
                             <Link href="/state" className={style.link}>Bom dia</Link>
                         </li>
                         <li>
+                            <Link href="/listas" className={style.link}>Listas</Link>
+                        </li>
+                        <li>
+                            <Link href="/props" className={style.link}>Props</Link>
+                        </li>
+                        <li>
                             <Link href="/" className={style.link}>Inicial</Link>
                         </li>
                     </ul>
@@ -51,6 +57,9 @@ function NavBar() {
                     </li>
                     <li>
                         <Link href="/" className={style.link}>Inicial</Link>
+                    </li>
+                    <li>
+                        <Link href="/lista" className={style.link}>listas</Link>
                     </li>
                 </ul>
                 <button>
