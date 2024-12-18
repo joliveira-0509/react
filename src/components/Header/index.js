@@ -40,7 +40,6 @@ export default function Header() {
     )
 }
 
-
 /* "use client"
 import Link from "next/link"
 import style from "./header.module.css"
