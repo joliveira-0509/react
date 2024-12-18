@@ -30,6 +30,9 @@ export default function Header() {
                         <li>
                             <Link href="/" className={style.link}>Inicial</Link>
                         </li>
+                        <li>
+                            <Link href="/efeitos" className={style.link}>efeitos</Link>
+                        </li>
                     </ul>
                 </nav>
             }
